@@ -1,4 +1,16 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
+# Check prettier standards
+yarn check:format ||
+(
+  echo '
+        🤢 🤢 🤢 🤢
+        Prettier Check Failed.
+        Run yarn format, add changes and try commit again.
+        🤢 🤢 🤢 🤢
+        ';
+  false;
+)
+
 yarn lint-staged
