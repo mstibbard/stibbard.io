@@ -52,8 +52,8 @@
       {/if}
     </div>
     <div class="space-x-3">
-      <a href="/" class="text-gray-900 dark:text-gray-100">Learning</a>
-      <a href="/" class="text-gray-900 dark:text-gray-100">Blog</a>
+      <a href="/learning" class="text-gray-900 dark:text-gray-100">Learning</a>
+      <a href="/blog" class="text-gray-900 dark:text-gray-100">Blog</a>
       <a href="/" class="text-gray-900 dark:text-gray-100">Home</a>
     </div>
   </nav>

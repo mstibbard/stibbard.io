@@ -115,6 +115,16 @@
     require-relative "^0.8.7"
     svelte-hmr "^0.14.7"
 
+"@tailwindcss/typography@^0.4.1":
+  version "0.4.1"
+  resolved "https://registry.yarnpkg.com/@tailwindcss/typography/-/typography-0.4.1.tgz#51ddbceea6a0ee9902c649dbe58871c81a831212"
+  integrity sha512-ovPPLUhs7zAIJfr0y1dbGlyCuPhpuv/jpBoFgqAc658DWGGrOBWBMpAWLw2KlzbNeVk4YBJMzue1ekvIbdw6XA==
+  dependencies:
+    lodash.castarray "^4.4.0"
+    lodash.isplainobject "^4.0.6"
+    lodash.merge "^4.6.2"
+    lodash.uniq "^4.5.0"
+
 "@trysound/sax@0.1.1":
   version "0.1.1"
   resolved "https://registry.yarnpkg.com/@trysound/sax/-/sax-0.1.1.tgz#3348564048e7a2d7398c935d466c0414ebb6a669"
@@ -146,6 +156,11 @@
   integrity sha512-iZUcRrGuz/Tbg3loODpW7vrQJkUtpY2fFSf4ELqqkApcS2TkZ1msk7ie8iZPB86lDOP8QOTTmuvWjc5S0R9OjQ==
   dependencies:
     "@types/node" "*"
+
+"@types/unist@^2.0.0", "@types/unist@^2.0.2", "@types/unist@^2.0.3":
+  version "2.0.6"
+  resolved "https://registry.yarnpkg.com/@types/unist/-/unist-2.0.6.tgz#250a7b16c3b91f672a24552ec64678eeb1d3a08d"
+  integrity sha512-PBjIUxZHOuj0R15/xuwJYjFi+KZdNFrehocChv4g5hu6aFroHue8m0lBP0POdK2nKzbw0cgV1mws8+V/JAcEkQ==
 
 "@typescript-eslint/eslint-plugin@^4.19.0":
   version "4.29.2"
@@ -1311,6 +1326,11 @@ jsonfile@^6.0.1:
   optionalDependencies:
     graceful-fs "^4.1.6"
 
+just-camel-case@^4.0.2:
+  version "4.0.2"
+  resolved "https://registry.yarnpkg.com/just-camel-case/-/just-camel-case-4.0.2.tgz#dc1e9e19e4200bb91f482716726135c35e901ac3"
+  integrity sha512-df6QI/EIq+6uHe/wtaa9Qq7/pp4wr4pJC/r1+7XhVL6m5j03G6h9u9/rIZr8rDASX7CxwDPQnZjffCo2e6PRLw==
+
 kleur@^4.1.4:
   version "4.1.4"
   resolved "https://registry.yarnpkg.com/kleur/-/kleur-4.1.4.tgz#8c202987d7e577766d039a8cd461934c01cda04d"
@@ -1367,10 +1387,20 @@ listr2@^3.8.2:
     through "^2.3.8"
     wrap-ansi "^7.0.0"
 
+lodash.castarray@^4.4.0:
+  version "4.4.0"
+  resolved "https://registry.yarnpkg.com/lodash.castarray/-/lodash.castarray-4.4.0.tgz#c02513515e309daddd4c24c60cfddcf5976d9115"
+  integrity sha1-wCUTUV4wna3dTCTGDP3c9ZdtkRU=
+
 lodash.clonedeep@^4.5.0:
   version "4.5.0"
   resolved "https://registry.yarnpkg.com/lodash.clonedeep/-/lodash.clonedeep-4.5.0.tgz#e23f3f9c4f8fbdde872529c1071857a086e5ccef"
   integrity sha1-4j8/nE+Pvd6HJSnBBxhXoIblzO8=
+
+lodash.isplainobject@^4.0.6:
+  version "4.0.6"
+  resolved "https://registry.yarnpkg.com/lodash.isplainobject/-/lodash.isplainobject-4.0.6.tgz#7c526a52d89b45c45cc690b88163be0497f550cb"
+  integrity sha1-fFJqUtibRcRcxpC4gWO+BJf1UMs=
 
 lodash.memoize@^4.1.2:
   version "4.1.2"
@@ -1438,6 +1468,24 @@ mdn-data@2.0.14:
   version "2.0.14"
   resolved "https://registry.yarnpkg.com/mdn-data/-/mdn-data-2.0.14.tgz#7113fc4281917d63ce29b43446f701e68c25ba50"
   integrity sha512-dn6wd0uw5GsdswPFfsgMp5NSB0/aDe6fK94YJV/AJDYXL6HVLWBsxeq7js7Ad+mU2K9LAlwpk6kN2D5mwCPVow==
+
+mdsvex-relative-images@^1.0.1:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/mdsvex-relative-images/-/mdsvex-relative-images-1.0.1.tgz#3d569ce92a9b634078b8706a38fc681ea85dda08"
+  integrity sha512-shh7N5lbN95ifcQRjFGnM5jpGZpG+BNTi7BY2C3jC+WX2+D/d2A3tCyluinIdDzk3FWavLD5Q6u5GXrZfOQh+w==
+  dependencies:
+    just-camel-case "^4.0.2"
+    unist-util-visit "^3.1.0"
+
+mdsvex@^0.9.8:
+  version "0.9.8"
+  resolved "https://registry.yarnpkg.com/mdsvex/-/mdsvex-0.9.8.tgz#f430988b86c4d9080381de2fbe54326c046487bc"
+  integrity sha512-5QvThjRKoKkGH00qdHxLZ5ROd80RgGiJvM2B9opeFreaiGFTLoKKFUgEBCslLrwM24cVGJLmIM3rR83OFDf3tQ==
+  dependencies:
+    "@types/unist" "^2.0.3"
+    prism-svelte "^0.4.7"
+    prismjs "^1.17.1"
+    vfile-message "^2.0.4"
 
 merge-stream@^2.0.0:
   version "2.0.0"
@@ -1911,6 +1959,16 @@ pretty-hrtime@^1.0.3:
   resolved "https://registry.yarnpkg.com/pretty-hrtime/-/pretty-hrtime-1.0.3.tgz#b7e3ea42435a4c9b2759d99e0f201eb195802ee1"
   integrity sha1-t+PqQkNaTJsnWdmeDyAesZWALuE=
 
+prism-svelte@^0.4.7:
+  version "0.4.7"
+  resolved "https://registry.yarnpkg.com/prism-svelte/-/prism-svelte-0.4.7.tgz#fbc6709450b4e2ed660ddb82c3718817fc584cbe"
+  integrity sha512-yABh19CYbM24V7aS7TuPYRNMqthxwbvx6FF/Rw920YbyBWO3tnyPIqRMgHuSVsLmuHkkBS1Akyof463FVdkeDQ==
+
+prismjs@^1.17.1:
+  version "1.24.1"
+  resolved "https://registry.yarnpkg.com/prismjs/-/prismjs-1.24.1.tgz#c4d7895c4d6500289482fa8936d9cdd192684036"
+  integrity sha512-mNPsedLuk90RVJioIky8ANZEwYm5w9LcvCXrxHlwf4fNVSn8jEipMybMkWUyyF0JhnC+C4VcOVSBuHRKs1L5Ow==
+
 progress@^2.0.0:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/progress/-/progress-2.0.3.tgz#7e8cf8d8f5b8f239c1bc68beb4eb78567d572ef8"
@@ -2365,6 +2423,35 @@ uniqs@^2.0.0:
   resolved "https://registry.yarnpkg.com/uniqs/-/uniqs-2.0.0.tgz#ffede4b36b25290696e6e165d4a59edb998e6b02"
   integrity sha1-/+3ks2slKQaW5uFl1KWe25mOawI=
 
+unist-util-is@^5.0.0:
+  version "5.1.1"
+  resolved "https://registry.yarnpkg.com/unist-util-is/-/unist-util-is-5.1.1.tgz#e8aece0b102fa9bc097b0fef8f870c496d4a6236"
+  integrity sha512-F5CZ68eYzuSvJjGhCLPL3cYx45IxkqXSetCcRgUXtbcm50X2L9oOWQlfUfDdAf+6Pd27YDblBfdtmsThXmwpbQ==
+
+unist-util-stringify-position@^2.0.0:
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/unist-util-stringify-position/-/unist-util-stringify-position-2.0.3.tgz#cce3bfa1cdf85ba7375d1d5b17bdc4cada9bd9da"
+  integrity sha512-3faScn5I+hy9VleOq/qNbAd6pAx7iH5jYBMS9I1HgQVijz/4mv5Bvw5iw1sC/90CODiKo81G/ps8AJrISn687g==
+  dependencies:
+    "@types/unist" "^2.0.2"
+
+unist-util-visit-parents@^4.0.0:
+  version "4.1.1"
+  resolved "https://registry.yarnpkg.com/unist-util-visit-parents/-/unist-util-visit-parents-4.1.1.tgz#e83559a4ad7e6048a46b1bdb22614f2f3f4724f2"
+  integrity sha512-1xAFJXAKpnnJl8G7K5KgU7FY55y3GcLIXqkzUj5QF/QVP7biUm0K0O2oqVkYsdjzJKifYeWn9+o6piAK2hGSHw==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    unist-util-is "^5.0.0"
+
+unist-util-visit@^3.1.0:
+  version "3.1.0"
+  resolved "https://registry.yarnpkg.com/unist-util-visit/-/unist-util-visit-3.1.0.tgz#9420d285e1aee938c7d9acbafc8e160186dbaf7b"
+  integrity sha512-Szoh+R/Ll68QWAyQyZZpQzZQm2UPbxibDvaY8Xc9SUtYgPsDzx5AWSk++UUt2hJuow8mvwR+rG+LQLw+KsuAKA==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    unist-util-is "^5.0.0"
+    unist-util-visit-parents "^4.0.0"
+
 universalify@^2.0.0:
   version "2.0.0"
   resolved "https://registry.yarnpkg.com/universalify/-/universalify-2.0.0.tgz#75a4984efedc4b08975c5aeb73f530d02df25717"
@@ -2391,6 +2478,14 @@ vendors@^1.0.3:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/vendors/-/vendors-1.0.4.tgz#e2b800a53e7a29b93506c3cf41100d16c4c4ad8e"
   integrity sha512-/juG65kTL4Cy2su4P8HjtkTxk6VmJDiOPBufWniqQ6wknac6jNiXS9vU+hO3wgusiyqWlzTbVHi0dyJqRONg3w==
+
+vfile-message@^2.0.4:
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/vfile-message/-/vfile-message-2.0.4.tgz#5b43b88171d409eae58477d13f23dd41d52c371a"
+  integrity sha512-DjssxRGkMvifUOJre00juHoP9DPWuzjxKuMDrhNbk2TdaYYBNMStsNhEOt3idrtI12VQYM/1+iM0KOzXi4pxwQ==
+  dependencies:
+    "@types/unist" "^2.0.0"
+    unist-util-stringify-position "^2.0.0"
 
 vite@^2.5.0:
   version "2.5.0"
