@@ -5,8 +5,13 @@
     <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     %svelte.head%
+    <script>
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.documentElement.classList.add('dark');
+      }
+    </script>
   </head>
-  <body>
+  <body class="bg-white dark:bg-black">
     <div id="svelte">%svelte.body%</div>
   </body>
 </html>
