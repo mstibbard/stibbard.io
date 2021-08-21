@@ -122,7 +122,7 @@
     <div class="mt-4 order-1 flex justify-center">
       <a
         href="/"
-        class="text-base text-gray-400 hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-500"
+        class="text-base text-green-600 hover:text-green-800 dark:text-yellow-600 dark:hover:text-yellow-800"
         >stibbard.io</a
       >
     </div>

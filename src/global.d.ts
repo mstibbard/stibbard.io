@@ -12,3 +12,14 @@ export type BlogPost = {
     tags?: string[];
   };
 };
+
+export type LearningSnippet = {
+  path: string;
+  metadata: {
+    layout: string;
+    title: string;
+    publishedOn: date;
+    updatedOn?: date;
+    tags?: string[];
+  };
+};
