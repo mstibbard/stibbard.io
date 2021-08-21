@@ -1,9 +1,11 @@
 ---
 layout: blog
-title: 'Why and How you should write a PR FAQ for your next product'
-excerpt: 'An in-depth look at writing a Press Release and Frequently Asked Questions'
-cover: '../../../images/pr-faq-cover.jpg'
-date: '2021-03-16'
+title: Why and How you should write a PR FAQ for your next product
+excerpt: An in-depth look at writing a Press Release and Frequently Asked Questions
+cover: ../../../images/pr-faq-cover.jpg
+publishedOn: 2021-03-16
+tags:
+  - product-dev
 ---
 
 A useful tool I learned at Amazon was the Press Release and Frequently Asked Questions (PR FAQ) process.

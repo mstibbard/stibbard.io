@@ -2,7 +2,7 @@
   import type { Load } from '@sveltejs/kit';
   import type { BlogPost } from 'src/global';
 
-  const allPosts = import.meta.glob('./*.md');
+  const allPosts = import.meta.glob('../blog/*.md');
 
   let content: Promise<BlogPost>[] = [];
   for (let path in allPosts) {
@@ -13,18 +13,25 @@
     );
   }
 
-  export const load: Load = async () => {
+  export const load: Load = async ({ page }) => {
     const getPosts: BlogPost[] = await Promise.all(content);
-    const posts = getPosts.sort(function (a, b) {
+    const tag = page.params.tag;
+
+    const dateOrderedPosts = getPosts.sort(function (a, b) {
       return (
         new Date(b.metadata.publishedOn).valueOf() -
         new Date(a.metadata.publishedOn).valueOf()
       );
     });
 
+    const filteredPosts = dateOrderedPosts.filter((post) => {
+      return post.metadata.tags?.includes(tag);
+    });
+
     return {
       props: {
-        posts
+        filteredPosts,
+        tag
       }
     };
   };
@@ -34,14 +41,16 @@
   import PageHeading from '$lib/components/pageHeading.svelte';
   import Section from '$lib/components/section.svelte';
 
-  export let posts: BlogPost[];
+  // PROPS
+  export let filteredPosts: BlogPost[];
+  export let tag: string;
 </script>
 
-<Section name="Blog">
-  <PageHeading>Blog</PageHeading>
+<Section name="Tag">
+  <PageHeading>#{tag} Blog Posts</PageHeading>
 
   <ul>
-    {#each posts as { path, metadata: { title, excerpt, tags } }}
+    {#each filteredPosts as { path, metadata: { title, excerpt, tags } }}
       <li class="mb-7">
         <a href={`/blog/${path.replace('.md', '')}`}>
           <div class="prose prose-xl text-gray-900 dark:text-gray-100">
@@ -51,13 +60,6 @@
             {excerpt}
           </p>
         </a>
-        {#if tags}
-          <p class="prose prose-sm">
-            {#each tags as tag}
-              <a href={`/tags/${tag}`}>#{tag}</a>&nbsp;
-            {/each}
-          </p>
-        {/if}
       </li>
     {/each}
   </ul>

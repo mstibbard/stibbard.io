@@ -7,6 +7,8 @@ export type BlogPost = {
     title: string;
     excerpt: string;
     cover: string;
-    date: string;
+    publishedOn: date;
+    updatedOn?: date;
+    tags?: string[];
   };
 };
