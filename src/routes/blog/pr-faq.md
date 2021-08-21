@@ -2,7 +2,7 @@
 layout: blog
 title: Why and How you should write a PR FAQ for your next product
 excerpt: An in-depth look at writing a Press Release and Frequently Asked Questions
-cover: ../../../images/pr-faq-cover.jpg
+cover: ../../../images/cover-pr-faq.jpg
 publishedOn: 2021-03-16
 tags:
   - product-dev
