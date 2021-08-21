@@ -19,7 +19,7 @@
         <button
           aria-label="Toggle Dark Mode"
           type="button"
-          class="w-10 h-10 p-3 bg-gray-200 rounded dark:bg-gray-800"
+          class="w-10 h-10 p-3 bg-blue-200 rounded dark:bg-gray-700"
           on:click|preventDefault={() => {
             document.documentElement.classList.toggle('dark');
             darkMode = !darkMode;
@@ -58,12 +58,31 @@
     </div>
   </nav>
 
-  <main>
+  <main class="mb-2">
     <slot />
   </main>
 
-  <footer class="pt-12 items-center">
-    <div class="flex justify-center space-x-6 order-2">
+  <footer
+    class="pt-6 border-t border-gray-200 dark:border-gray-600 items-center"
+  >
+    <nav class="flex justify-center space-x-3 order-3" aria-label="Footer">
+      <a
+        href="/learning"
+        class="text-gray-400 hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-500"
+        >Learning</a
+      >
+      <a
+        href="/blog"
+        class="text-gray-400 hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-500"
+        >Blog</a
+      >
+      <a
+        href="/"
+        class="text-gray-400 hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-500"
+        >Home</a
+      >
+    </nav>
+    <div class="mt-4 flex justify-center space-x-6 order-2">
       <a
         href="https://twitter.com/MatthewStibbard"
         class="text-gray-400 hover:text-gray-600 dark:text-gray-300 dark:hover:text-gray-500"
