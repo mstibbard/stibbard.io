@@ -84,7 +84,7 @@
     <PageHeading>#{tag} Blog Posts</PageHeading>
 
     <ul>
-      {#each filteredPosts as { path, metadata: { title, excerpt, tags } }}
+      {#each filteredPosts as { path, metadata: { title, excerpt } }}
         <li class="mb-7">
           <a href={`/blog/${path.replace('.md', '')}`}>
             <div class="prose prose-xl text-gray-900 dark:text-gray-100">
@@ -105,7 +105,7 @@
     <PageHeading>#{tag} Learning Snippets</PageHeading>
 
     <ul>
-      {#each filteredSnippets as { path, metadata: { title, tags } }}
+      {#each filteredSnippets as { path, metadata: { title } }}
         <li class="mb-7">
           <a href={`/learning/${path.replace('.md', '')}`}>
             <div class="prose prose-xl text-gray-900 dark:text-gray-100">
