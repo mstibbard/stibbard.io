@@ -18,6 +18,13 @@
   export let tags;
 </script>
 
+<svelte:head>
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/dracula-prism/dist/css/dracula-prism.min.css"
+  />
+</svelte:head>
+
 <div class="py-8">
   <PageHeading>{title}</PageHeading>
 

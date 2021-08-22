@@ -23,3 +23,11 @@ export type LearningSnippet = {
     tags?: string[];
   };
 };
+
+export type Toast = {
+  id: number;
+  type: 'info' | 'success' | 'error' | 'warning';
+  message: string;
+  dismissible: boolean;
+  duration: number;
+};
