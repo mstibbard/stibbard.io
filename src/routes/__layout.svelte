@@ -119,7 +119,7 @@
         </svg>
       </a>
     </div>
-    <div class="mt-4 order-1 flex justify-center">
+    <div class="mt-4 mb-8 order-1 flex justify-center">
       <a
         href="/"
         class="text-base text-green-600 hover:text-green-800 dark:text-yellow-600 dark:hover:text-yellow-800"
