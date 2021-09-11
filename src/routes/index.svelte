@@ -1,5 +1,6 @@
 <script lang="ts">
   import PageHeading from '$lib/components/pageHeading.svelte';
+  import Product from '$lib/components/product.svelte';
   import Section from '$lib/components/section.svelte';
 </script>
 
@@ -36,7 +37,7 @@
   <h1
     class="mb-4 text-2xl md:text-4xl font-bold tracking-tight text-black dark:text-white"
   >
-    Aussie Indie Hackers
+    Aussie Founders
   </h1>
   <div
     class="prose dark:prose-dark text-gray-600 dark:text-gray-400 max-w-none dark:max-w-none"
@@ -44,7 +45,7 @@
     <p>
       Thinking of bootstrapping your own product? Already well on your way? Join
       the fledgling <a href="https://discord.gg/BHyBgErXnd"
-        >Aussie Indie Hackers Discord</a
+        >Aussie Founders Discord</a
       >. It's a friendly group of likeminded people keen to learn together,
       share wins, and keep each other accountable.
     </p>
@@ -57,13 +58,17 @@
   >
     Products
   </h1>
-  <div
-    class="prose dark:prose-dark text-gray-600 dark:text-gray-400 max-w-none dark:max-w-none"
-  >
-    <p>
-      WORK IN PROGRESS - <a href="https://shaper-client.vercel.app/"
-        >Very early preview: Cafe Hero</a
-      >
-    </p>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <Product
+      name="Aussie Founders"
+      launchDate={new Date(2021, 7, 2)}
+      mrr="N/A"
+      url="https://discord.gg/BHyBgErXnd"
+      users={6}
+      usersCalled="Members"
+    />
+    <Product name="Cafe Hero" launchDate="" mrr={0} users={0} />
+    <Product name="CODENAME: BAKERY" launchDate="" mrr={0} users={0} />
+    <Product name="CODENAME: PROSPER" launchDate="" mrr={0} users={0} />
   </div>
 </Section>
