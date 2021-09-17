@@ -68,7 +68,13 @@
       usersCalled="Members"
     />
     <Product name="Cafe Hero" launchDate="" mrr={0} users={0} />
-    <Product name="CODENAME: BAKERY" launchDate="" mrr={0} users={0} />
+    <Product
+      name="jobstack"
+      launchDate=""
+      mrr={0}
+      users={0}
+      url="https://www.jobstack.com.au"
+    />
     <Product name="CODENAME: PROSPER" launchDate="" mrr={0} users={0} />
   </div>
 </Section>
