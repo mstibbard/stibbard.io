@@ -38,6 +38,10 @@
   export let posts: LearningSnippet[];
 </script>
 
+<svelte:head>
+  <title>Learning · stibbard.io</title>
+</svelte:head>
+
 <Section name="Learning">
   <PageHeading>Learning</PageHeading>
 

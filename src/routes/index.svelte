@@ -4,6 +4,10 @@
   import Section from '$lib/components/section.svelte';
 </script>
 
+<svelte:head>
+  <title>stibbard.io</title>
+</svelte:head>
+
 <Section name="Intro">
   <PageHeading>Hi, I'm Matt Stibbard</PageHeading>
   <div

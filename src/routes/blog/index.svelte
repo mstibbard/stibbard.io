@@ -37,6 +37,10 @@
   export let posts: BlogPost[];
 </script>
 
+<svelte:head>
+  <title>Blog · stibbard.io</title>
+</svelte:head>
+
 <Section name="Blog">
   <PageHeading>Blog</PageHeading>
 

@@ -1,6 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte';
   import '../app.postcss';
+  import { dev } from '$app/env';
 
   let darkMode: boolean;
   let darkModeReady = false;
@@ -11,6 +12,15 @@
     darkModeReady = true;
   });
 </script>
+
+<svelte:head>
+  {#if !dev}
+    <script
+      defer
+      data-domain="stibbard.io"
+      src="https://plausible.io/js/plausible.js"></script>
+  {/if}
+</svelte:head>
 
 <div name="container" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
   <nav class="py-6 flex justify-between items-center" aria-label="Main">
