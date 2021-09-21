@@ -22,7 +22,7 @@ For example, we generally have a separate database for production and developmen
 
 ## Where do environment variables live?
 
-They are stored in a `.env` file, or some variation of that such as `.env.local`, etc.
+They are stored in a `.env` file, or some variation of that such as `.env.local`, etc. My preference is to use `.env`.
 
 `.env` files **must not** be added to version control - so make sure they are in our `.gitignore`.
 
@@ -31,16 +31,17 @@ _.gitignore_
 ```
 ...
 .env
-.env.local
 ```
 
-Because these are kept out of version control, it is common to pair every `.env` file with a `.env.example` file showing what it should contain.
+Because these are kept out of version control, it is common to pair every `.env` file with a `.env.example` file showing what it should contain. The example file should be version controlled.
 
 ## What does a .env file look like?
 
-An environment variable file is plaintext. Below is a mockup of `.env.local` and `.env.local.example` for a simple application using supabase and stripe.
+An environment variable file is plaintext.
 
-_.env.local_
+Below is a mockup of `.env` and `.env.example` for a simple application using supabase and stripe.
+
+_.env_
 
 ```
 VITE_SUPABASE_URL=https://abcdefg.supabase.co
@@ -49,7 +50,7 @@ VITE_STRIPE_PUBLIC_KEY=pk_test_24mk3szSd4233
 STRIPE_SECRET_KEY=sk_test_24mfdsk3E4r
 ```
 
-_.env.local.example_
+_.env.example_
 
 ```
 VITE_SUPABASE_URL=https://xxxxxx.supabase.co
@@ -96,10 +97,10 @@ _src/lib/utils/stripe.ts_
 import dotenv from 'dotenv';
 
 // dotenv.config looks for a .env file in the project's root
-// directory. this example is using a .env.local file, so we must
-// specify the path. Our file is still in root however, so just
-// the filename is sufficient
-dotenv.config({ path: '.env.local' });
+// directory. If using a .env.local etc or a file in a
+// subdirectory a path must be specified
+// e.g. dotenv.config({ path: '.env.local' });
+dotenv.config();
 
 const stripeSecretKey = process.env['STRIPE_SECRET_KEY'] as string;
 ...
