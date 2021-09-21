@@ -13,4 +13,31 @@ yarn check:format ||
   false;
 )
 
-yarn lint-staged
+# Check types
+yarn run check ||
+(
+  echo '
+        😤 😤 😤 😤
+        Type Check Failed.
+        Make the changes above, add changes and re-try commit.
+        😤 😤 😤 😤
+        ';
+  false;
+)
+
+yarn build ||
+(
+  echo '
+        ❌ ❌ ❌ ❌
+        Build failed: View the errors above to see why.
+        ❌ ❌ ❌ ❌
+        ';
+  false;
+)
+
+echo '
+      ✅ Prettier 
+      ✅ ESLint
+      ✅ Build
+      All passed. Committing now.
+      ';

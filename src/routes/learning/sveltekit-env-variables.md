@@ -62,9 +62,9 @@ STRIPE_SECRET_KEY=<stripe_secret_key>
 
 ### Public / publishable keys
 
-SvelteKit uses Vite which provides access to environment variables via `import.meta.env.*`.
+SvelteKit uses Vite which provides access to environment variables via `import.meta.env.VAR_NAME`.
 
-`import.meta.env.*` is limited to public/publishable keys which are prefixed with `VITE_`.
+`import.meta.env.VAR_NAME` is limited to public/publishable keys which are prefixed with `VITE_`.
 
 Importing the two publishable supabase keys from the example above would be:
 
