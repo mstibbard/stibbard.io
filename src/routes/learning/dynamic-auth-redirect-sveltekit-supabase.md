@@ -56,7 +56,7 @@ We then create a variable and combine the two to create our redirect URL.
 import { page } from '$app/stores';
 const redirectUrl = `${prefix}${$page.host}`;
 // redirectUrl would be http://localhost:3000 if you run in dev OR
-// redirectUrl would be https://stibbard.io if you were on the current page
+// redirectUrl would be https://www.stibbard.io if you were on the current page
 ```
 
 Now, combining it all would look like:
