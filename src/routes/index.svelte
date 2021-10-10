@@ -37,7 +37,7 @@
   </div>
 </Section>
 
-<Section name="Aussie Indie Hackers">
+<Section name="Aussie Founders">
   <h1
     class="mb-4 text-2xl md:text-4xl font-bold tracking-tight text-black dark:text-white"
   >
@@ -63,22 +63,29 @@
     Products
   </h1>
   <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+    <a href="https://discord.gg/BHyBgErXnd">
+      <Product
+        businessModel="None"
+        launchDate={new Date(2021, 7, 2)}
+        name="Aussie Founders"
+        revenueModel="None"
+        what="Support group for Aussies having a go"
+      /></a
+    >
+    <a href="https://www.rafo.com.au"
+      ><Product
+        businessModel="B2B"
+        launchDate={new Date(2021, 9, 12)}
+        name="RAFO"
+        revenueModel="Sales"
+        what="Remote and flexible jobs for Aussies & Kiwis"
+      /></a
+    >
     <Product
-      name="Aussie Founders"
-      launchDate={new Date(2021, 7, 2)}
-      mrr="N/A"
-      url="https://discord.gg/BHyBgErXnd"
-      users={6}
-      usersCalled="Members"
+      businessModel="B2C"
+      name="CODENAME: PROSPER"
+      revenueModel="Subscription"
+      what="Financial education for young Australians"
     />
-    <Product name="Cafe Hero" launchDate="" mrr={0} users={0} />
-    <Product
-      name="jobstack"
-      launchDate=""
-      mrr={0}
-      users={0}
-      url="https://www.jobstack.com.au"
-    />
-    <Product name="CODENAME: PROSPER" launchDate="" mrr={0} users={0} />
   </div>
 </Section>

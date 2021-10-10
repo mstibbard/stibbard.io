@@ -31,3 +31,7 @@ export type Toast = {
   dismissible: boolean;
   duration: number;
 };
+
+export type RevenueModels = 'Subscription' | 'Sales' | 'Freemium' | 'None';
+
+export type BusinessModels = 'B2B' | 'B2C' | 'None';
