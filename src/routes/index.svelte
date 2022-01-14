@@ -1,6 +1,5 @@
 <script lang="ts">
   import PageHeading from '$lib/components/pageHeading.svelte';
-  import Product from '$lib/components/product.svelte';
   import Section from '$lib/components/section.svelte';
 </script>
 
