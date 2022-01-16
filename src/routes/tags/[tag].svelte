@@ -48,10 +48,10 @@
     return filteredList;
   }
 
-  export const load: Load = async ({ page }) => {
+  export const load: Load = async ({ params }) => {
     const getPosts: BlogPost[] = await Promise.all(blogContent);
     const getSnippets: LearningSnippet[] = await Promise.all(snippetContent);
-    const tag = page.params.tag;
+    const tag = params.tag;
 
     const dateOrderedPosts = sortByDateDescending(getPosts);
     const dateOrderedSnippets = sortByDateDescending(getSnippets);

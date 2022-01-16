@@ -2,6 +2,7 @@
 layout: learning
 title: Dynamic Authentication Redirects with SvelteKit, Supabase, and Vercel
 publishedOn: 2021-09-30
+updatedOn: 2022-01-16
 tags:
   - sveltekit
   - supabase
@@ -11,6 +12,18 @@ tags:
 <script lang="ts">
   import { page } from '$app/stores';
 </script>
+
+<svelte:head>
+
+  <title>Dynamic Authentication Redirects with SvelteKit, Supabase, and Vercel · stibbard.io</title>
+  <meta name="og:title" content="Dynamic Authentication Redirects with SvelteKit, Supabase, and Vercel · stibbard.io" />
+  <meta property="og:url" content="https://www.stibbard.io/learning/dynamic-auth-redirect-sveltekit-supabase" />
+  <meta name="og:description" content="How to set up dynamic Authentication redirects when working with SvelteKit, Supabase, and Vercel" />
+  <meta name="description" content="How to set up dynamic Authentication redirects when working with SvelteKit, Supabase, and Vercel" />
+  <meta property="twitter:title" content="Dynamic Authentication Redirects with SvelteKit, Supabase, and Vercel · stibbard.io" />
+  <meta property="twitter:url" content="https://www.stibbard.io/learning/dynamic-auth-redirect-sveltekit-supabase" />
+  <meta name="twitter:description" content="How to set up dynamic Authentication redirects when working with SvelteKit, Supabase, and Vercel" />
+</svelte:head>
 
 ## What is the problem?
 
@@ -48,13 +61,13 @@ import { dev } from '$app/env';
 const prefix: string = dev ? 'http://' : 'https://';
 ```
 
-We use `$page.host` from `$app/stores` to grab the host domain details that the application is running on. For example, the page you are reading now has a `$page.host` of _**{$page.host}**_.
+We use `$page.url.host` from `$app/stores` to grab the host domain details that the application is running on. For example, the page you are reading now has a `$page.url.host` of _**{$page.url.host}**_.
 
 We then create a variable and combine the two to create our redirect URL.
 
 ```ts
 import { page } from '$app/stores';
-const redirectUrl = `${prefix}${$page.host}`;
+const redirectUrl = `${prefix}${$page.url.host}`;
 // redirectUrl would be http://localhost:3000 if you run in dev OR
 // redirectUrl would be https://www.stibbard.io if you were on the current page
 ```
@@ -69,7 +82,7 @@ Now, combining it all would look like:
 
   let email: string;
   const prefix: string = dev ? 'http://' : 'https://';
-  const redirectUrl: string = `${prefix}${$page.host}`;
+  const redirectUrl: string = `${prefix}${$page.url.host}`;
 
   const handleSubmit = async () => {
     await supabase.auth.signIn(
