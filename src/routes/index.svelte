@@ -5,6 +5,22 @@
 
 <svelte:head>
   <title>stibbard.io</title>
+  <meta name="og:title" content="stibbard.io" />
+  <meta property="og:url" content="https://www.stibbard.io/" />
+  <meta
+    name="og:description"
+    content="Matt Stibbard's personal site, where he writes (very occasionally) about topics he's learned or found interesting at the time."
+  />
+  <meta
+    name="description"
+    content="Matt Stibbard's personal site, where he writes (very occasionally) about topics he's learned or found interesting at the time."
+  />
+  <meta property="twitter:title" content="stibbard.io" />
+  <meta property="twitter:url" content="https://www.stibbard.io/" />
+  <meta
+    name="twitter:description"
+    content="Matt Stibbard's personal site, where he writes (very occasionally) about topics he's learned or found interesting at the time."
+  />
 </svelte:head>
 
 <Section name="Intro">

@@ -6,6 +6,18 @@ tags:
   - sveltekit
 ---
 
+<svelte:head>
+
+  <title>Environment variables in SvelteKit · stibbard.io</title>
+  <meta name="og:title" content="Environment variables in SvelteKit · stibbard.io" />
+  <meta property="og:url" content="https://www.stibbard.io/learning/sveltekit-env-variables" />
+  <meta name="og:description" content="How to work with environment variables in SvelteKit." />
+  <meta name="description" content="How to work with environment variables in SvelteKit." />
+  <meta property="twitter:title" content="Environment variables in SvelteKit · stibbard.io" />
+  <meta property="twitter:url" content="https://www.stibbard.io/learning/sveltekit-env-variables" />
+  <meta name="twitter:description" content="How to work with environment variables in SvelteKit." />
+</svelte:head>
+
 ## What are environment variables?
 
 Environment variables are named variables which change the way our application runs. This enables us to have multiple environments, with different databases etc, without requiring any code changes.

@@ -8,6 +8,18 @@ tags:
   - personal-finance
 ---
 
+<svelte:head>
+
+  <title>Net worth · stibbard.io</title>
+  <meta name="og:title" content="Net worth · stibbard.io" />
+  <meta property="og:url" content="https://www.stibbard.io/blog/net-worth" />
+  <meta name="og:description" content="A concise introduction to what net worth is, and why you should care" />
+  <meta name="description" content="A concise introduction to what net worth is, and why you should care" />
+  <meta property="twitter:title" content="Net worth · stibbard.io" />
+  <meta property="twitter:url" content="https://www.stibbard.io/blog/net-worth" />
+  <meta name="twitter:description" content="A concise introduction to what net worth is, and why you should care" />
+</svelte:head>
+
 According to the Australian Bureau of Statistics (ABS) the median (middle value of the sample) Australian household net worth was $558,900 in [2017-18](https://www.abs.gov.au/ausstats/abs@.nsf/mf/6523.0). An increase of $106,800 from 2005-06, and an increase of $12,400 from 2015-16.
 
 _Note: The median is more useful here as a few very high net worth households drastically impact these statistics. For example, the mean (average) Australian household net worth for 2017-18 is $1,022,200. That's ~83% higher._

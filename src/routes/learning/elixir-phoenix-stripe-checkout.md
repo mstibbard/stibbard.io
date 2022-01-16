@@ -8,6 +8,18 @@ tags:
   - stripe
 ---
 
+<svelte:head>
+
+  <title>Stripe Checkout with Phoenix LiveView · stibbard.io</title>
+  <meta name="og:title" content="Stripe Checkout with Phoenix LiveView · stibbard.io" />
+  <meta property="og:url" content="https://www.stibbard.io/learning/elixir-phoenix-stripe-checkout" />
+  <meta name="og:description" content="How to get up and running with Stripe Checkout in Phoenix LiveView projects" />
+  <meta name="description" content="How to get up and running with Stripe Checkout in Phoenix LiveView projects" />
+  <meta property="twitter:title" content="Stripe Checkout with Phoenix LiveView · stibbard.io" />
+  <meta property="twitter:url" content="https://www.stibbard.io/learning/elixir-phoenix-stripe-checkout" />
+  <meta name="twitter:description" content="How to get up and running with Stripe Checkout in Phoenix LiveView projects" />
+</svelte:head>
+
 ## What is Stripe Checkout?
 
 Stripe Checkout lets you receive a payment from customers without having to handle any card details or create your own payment capture form.

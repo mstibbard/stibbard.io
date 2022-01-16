@@ -40,6 +40,22 @@
 
 <svelte:head>
   <title>Learning · stibbard.io</title>
+  <meta name="og:title" content="Learning · stibbard.io" />
+  <meta property="og:url" content="https://www.stibbard.io/learning" />
+  <meta
+    name="og:description"
+    content="Short how-to's and other learnings by Matt Stibbard."
+  />
+  <meta
+    name="description"
+    content="Short how-to's and other learnings by Matt Stibbard."
+  />
+  <meta property="twitter:title" content="Learning · stibbard.io" />
+  <meta property="twitter:url" content="https://www.stibbard.io/learning" />
+  <meta
+    name="twitter:description"
+    content="Short how-to's and other learnings by Matt Stibbard."
+  />
 </svelte:head>
 
 <Section name="Learning">

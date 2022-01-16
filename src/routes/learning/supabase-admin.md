@@ -6,6 +6,18 @@ tags:
   - supabase
 ---
 
+<svelte:head>
+
+  <title>Supabase Admin · stibbard.io</title>
+  <meta name="og:title" content="Supabase Admin · stibbard.io" />
+  <meta property="og:url" content="https://www.stibbard.io/learning/supabase-admin" />
+  <meta name="og:description" content="How to set up the equivalent of the Firebase Admin SDK in Supabase" />
+  <meta name="description" content="How to set up the equivalent of the Firebase Admin SDK in Supabase" />
+  <meta property="twitter:title" content="Supabase Admin · stibbard.io" />
+  <meta property="twitter:url" content="https://www.stibbard.io/learning/supabase-admin" />
+  <meta name="twitter:description" content="How to set up the equivalent of the Firebase Admin SDK in Supabase" />
+</svelte:head>
+
 This is the Supabase equivalent of the Firebase Admin SDK.
 
 ## Why do I need Supabase Admin?

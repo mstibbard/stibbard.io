@@ -8,6 +8,18 @@ tags:
   - product-dev
 ---
 
+<svelte:head>
+
+  <title>Why and How you should write a PR FAQ for your next product · stibbard.io</title>
+  <meta name="og:title" content="Why and How you should write a PR FAQ for your next product · stibbard.io" />
+  <meta property="og:url" content="https://www.stibbard.io/blog/pr-faq" />
+  <meta name="og:description" content="An in-depth look at writing a Press Release and Frequently Asked Questions" />
+  <meta name="description" content="An in-depth look at writing a Press Release and Frequently Asked Questions" />
+  <meta property="twitter:title" content="Why and How you should write a PR FAQ for your next product · stibbard.io" />
+  <meta property="twitter:url" content="https://www.stibbard.io/blog/pr-faq" />
+  <meta name="twitter:description" content="An in-depth look at writing a Press Release and Frequently Asked Questions" />
+</svelte:head>
+
 A useful tool I learned at Amazon was the Press Release and Frequently Asked Questions (PR FAQ) process.
 
 If you are like me you have a bad habit of jumping straight to “solutioning”: delving into clever technical ways you could build something to solve all of the problems. This is an easy trap to fall into because it’s often the more intellectually stimulating part of building something - a blank page where anything is possible. Whether you end up building something is up for debate, or worse, you build something and it doesn’t solve a real problem. This can result in a lot of wasted time and effort.

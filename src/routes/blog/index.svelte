@@ -39,6 +39,22 @@
 
 <svelte:head>
   <title>Blog · stibbard.io</title>
+  <meta name="og:title" content="Blog · stibbard.io" />
+  <meta property="og:url" content="https://www.stibbard.io/blog" />
+  <meta
+    name="og:description"
+    content="Long-ish form content on topics that Matt Stibbard found interesting at the time."
+  />
+  <meta
+    name="description"
+    content="Long-ish form content on topics that Matt Stibbard found interesting at the time."
+  />
+  <meta property="twitter:title" content="Blog · stibbard.io" />
+  <meta property="twitter:url" content="https://www.stibbard.io/blog" />
+  <meta
+    name="twitter:description"
+    content="Long-ish form content on topics that Matt Stibbard found interesting at the time."
+  />
 </svelte:head>
 
 <Section name="Blog">

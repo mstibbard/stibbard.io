@@ -13,6 +13,18 @@ tags:
   import { addToast } from "$lib/stores/toast";
 </script>
 
+<svelte:head>
+
+  <title>Toasts in SvelteKit · stibbard.io</title>
+  <meta name="og:title" content="Toasts in SvelteKit · stibbard.io" />
+  <meta property="og:url" content="https://www.stibbard.io/learning/sveltekit-toast" />
+  <meta name="og:description" content="How to make Toast components in your SvelteKit projects." />
+  <meta name="description" content="How to make Toast components in your SvelteKit projects." />
+  <meta property="twitter:title" content="Toasts in SvelteKit · stibbard.io" />
+  <meta property="twitter:url" content="https://www.stibbard.io/learning/sveltekit-toast" />
+  <meta name="twitter:description" content="How to make Toast components in your SvelteKit projects." />
+</svelte:head>
+
 <Toasts />
 
 ## What is a Toast message?
